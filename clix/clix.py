@@ -1,6 +1,5 @@
 import os
 import sys
-import json
 import xerox
 import pickle
 import argparse
@@ -72,7 +71,7 @@ class ThreadedKeyBind(threading.Thread):
                 utils.active = 1
             prev_Key = None
 
-        elif (( (pprint.pformat(key) == "'c'" or
+        elif (((pprint.pformat(key) == "'c'" or
                 pprint.pformat(key) == "u'c'") and
                 prev_Key == keyboard.Key.ctrl) or
                 pprint.pformat(key) == "'\\x03'"):
@@ -93,7 +92,7 @@ class ThreadedKeyBind(threading.Thread):
 
             print("You just copied: {}".format(self.text))
 
-        elif (( (pprint.pformat(key) == "'z'" or
+        elif (((pprint.pformat(key) == "'z'" or
                 pprint.pformat(key) == "u'z'") and
                 prev_Key == keyboard.Key.ctrl) or
                 pprint.pformat(key) == "'\\x1a'"):
@@ -190,7 +189,7 @@ def main():
 
     # seperate thread because of tkinter mainloop
     # which blocks every other event
-    t = ThreadedKeyBind().start()
+    ThreadedKeyBind().start()
 
     # start gui
     utils.active = 1

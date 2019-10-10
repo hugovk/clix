@@ -1,4 +1,3 @@
-from os import path
 from functools import partial
 try:
     import utils
