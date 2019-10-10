@@ -144,7 +144,7 @@ def main():
 
     help = """Set alternate key binding. Default is LCTRL+SPACE
                 Format :- <KEY1>+<KEY2>. Ex:- RCTRL+RALT .
-                To see availble key bindings use 'clix -a' option"""
+                To see available key bindings use 'clix -a' option"""
 
     parser.add_argument("-s", "--set-keybinding", type=str,
                         default=None, help=help)
@@ -188,7 +188,7 @@ def main():
         print("new session")
         create_new_session()
 
-    # seperate thread because of tkinter mainloop
+    # separate thread because of tkinter mainloop
     # which blocks every other event
     t = ThreadedKeyBind().start()
 

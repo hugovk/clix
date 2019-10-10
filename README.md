@@ -61,7 +61,7 @@ An easy to use clipboard manager made using tkinter.
 - Now, as you copy any text, (using **Ctrl** + **c** keys), the text is saved to 
   topmost frame of clix clipboard.
 
-- Whenever you want to paste any clip, just open clix GUI (usin **Ctrl** + 
+- Whenever you want to paste any clip, just open clix GUI (using **Ctrl** + 
   **space** keys) and click on **clip it** button to copy clip text to main clipboard.
 
   Now, simply pressing **Ctrl** + **v** keys will paste the desired clip text!
@@ -79,7 +79,7 @@ An easy to use clipboard manager made using tkinter.
 	  -s SET_KEYBINDING, --set-keybinding SET_KEYBINDING
 	                        Set alternate key binding. Default is LCTRL+SPACE
 	                        Format :- <KEY1>+<KEY2>. Ex:- RCTRL+RALT. To see
-	                        availble key bindings use 'clix -a' option
+	                        available key bindings use 'clix -a' option
 	  -a, --available-keybindings
 	                        Show available key bindings
 	  -c, --show-current-keybinding
